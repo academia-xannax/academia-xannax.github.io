@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACADEMIA XANNAX</title>
+    <link rel="stylesheet" href="intranet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="intranet.js"></script>
+    <script src="mensaje.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logox.png" alt="Logo ACADEMIA XANNAX" class="logo">
+        <h1>XANNAX INTRANET</h1>
+    </header>
+    <nav class="navbar">
+        <a href="cursos.html" class="active">Cursos</a>
+        <a href="mensajes.html">Mensajes</a>
+        <a href="archivos.html">Archivos</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+    <div class="main-content">
+        <aside class="sidebar">
+            <h2>Panel de Navegación</h2>
+            <ul>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="archivos.html">Archivos</a></li>
+                <li><a href="videollamadas.html">Videollamadas</a></li>
+                <li><a href="tarea.html">Tareas</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="gestiongrupos.html">Grupos</a></li>
+            </ul>
+        </aside>
+        <section class="content" id="messages">
+            <h2>Mensajes</h2>
+            
+            <div class="message-container">
+                <!-- Lista de mensajes -->
+                <div class="message-list">
+                    <!-- Mensaje 1 -->
+                    <div class="message-item">
+                        <div class="message-header">
+                            <strong>Juan Pérez</strong> <span class="message-time">12:45 PM</span>
+                        </div>
+                        <p class="message-body">Hola, ¿cómo estás? Quería saber si podríamos revisar el proyecto juntos esta semana.</p>
+                    </div>
+        
+                    <!-- Mensaje 2 -->
+                    <div class="message-item">
+                        <div class="message-header">
+                            <strong>Maria López</strong> <span class="message-time">1:20 PM</span>
+                        </div>
+                        <p class="message-body">¡Hola! Claro, podemos hacer una reunión el miércoles. ¿Te va bien a las 10 AM?</p>
+                    </div>
+        
+                    <!-- Mensaje 3 -->
+                    <div class="message-item">
+                        <div class="message-header">
+                            <strong>Academia Xannax</strong> <span class="message-time">2:00 PM</span>
+                        </div>
+                        <p class="message-body">Recordatorio: La fecha límite para la entrega de informes es el viernes.</p>
+                    </div>
+                </div>
+        
+                <!-- Formulario de envío de mensajes -->
+                <div class="message-form">
+                    <textarea id="messageInput" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <button class="btn" onclick="sendMessage()">Enviar</button>
+                </div>
+            </div>
+        </section>
+        
+        
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 ACADEMIA XANNAX</p>
+    </footer>
+</body>
+</html>

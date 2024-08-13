@@ -1,0 +1,120 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #081b29
+    ;
+    margin: 0;
+    background-image: url(img/fondo2.jpg) ;
+}
+
+.cabeza{
+    display: flex;
+    background-color: rgb(4, 45, 100);
+    height: 90px;
+    padding: 5px;
+    /*border: 2PX solid rebeccapurple;*/
+    box-shadow: 0 0 25px 0 #2244da;
+}
+
+.cabeza img{
+    /*border: 2PX solid rebeccapurple;*/
+    float: left;
+    padding: 5px 20px;
+    transition: .3s;
+    box-shadow: 0 0 25px 0 #00a6bc;
+}
+.cabeza img:hover{
+transform: scale(1.1);
+
+
+
+}
+.titulo{
+    /*border: 2PX solid rebeccapurple;*/
+    float: left;
+}
+
+.titulo h2{
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.titulo h1{
+    color: rgb(0, 162, 255);
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    
+}
+    
+.intranet{
+    /*border: 2PX solid rebeccapurple;*/
+    width: 75%;
+    padding: 10px;
+
+}
+.intranet h1{
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: rgb(218, 218, 218);
+}
+.intra{
+    /*border: 2PX solid rebeccapurple;*/
+    width: 15%;
+    display: block;
+    padding: 15px 20px;
+    float: right;
+}
+
+.intra h1{
+    float: right;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #ffffff;
+    padding: 15px;
+    transition: .3s;
+}
+
+
+.principal {
+    display: flex;
+    padding: 20px;
+    
+}
+
+.section1{
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}

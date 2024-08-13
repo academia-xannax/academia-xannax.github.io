@@ -1,0 +1,269 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url(img/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    animation: moveBackground 10s infinite linear; /* Animación de movimiento */
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 50% 0%;
+    }
+    50% {
+        background-position: 50% 50%;
+    }
+    75% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.cabeza{
+    display: flex;
+    background-color: rgb(4, 45, 100);
+    height: 90px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.cabeza img{
+    float: left;
+    padding: 5px 20px;
+    transition: .3s;
+}
+.cabeza img:hover{
+transform: scale(1.1);
+
+
+
+}
+
+.titulo h2{
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+.titulo h1{
+    color: rgb(0, 162, 255);
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    
+}
+    
+.intra{
+    width: 15%;
+    display: block;
+    padding: 15px 20px;
+}
+
+.intra h1{
+    float: right;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #ffffff;
+    padding: 15px;
+    transition: .3s;
+}
+
+.intra h1:hover{
+    transform: scaleX(1.1);
+    color: rgb(212, 232, 255);
+    border: 2px solid rgb(107, 198, 221);
+}
+
+nav{
+    padding: 10px 0;
+    width: 70%;
+}
+
+nav ul{
+    position: relative;
+    float: right;
+    margin: 20px;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+    transition: .3s linear;
+    z-index: 1000;
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+}
+
+nav ul a li{
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: .3s linear;
+}
+
+nav ul a li:hover{
+    transform: scale(1.1);
+    color: aqua;
+}
+
+/*log in*/
+
+.hidden {
+    display: none;
+    
+}
+.hidden .login-container .logo_titulo{
+    display: flex;
+    border: 3px solid rebeccapurple;
+}
+
+.login-container {
+    background-color: hsla(221, 17%, 63%, 0.363);
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(232, 232, 232, 0.354);
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    margin: 50px 20px auto 75%;
+ 
+    transition: .3s linear;
+    float: center;
+
+}
+.login-container:hover{
+    transform: scale(1.1);
+    border: 2px solid skyblue;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+/* 
+ header{
+    background-color: rgb(27, 56, 110);
+    display: flex;
+    padding: 10px;
+    }
+.cabeza{
+    position: fixed;
+    height: 70px;
+    right: 0;
+    left: 0;
+    background-color: navy;
+    box-sizing: border-box;
+    -webkit-animation-shadow:0px 17px 59px 11px rgb(63, 0,199,0.62);
+    -moz-box-shadow:0px 17px 59px 11px rgb(63, 0,199,0.62);
+    box-shadow:0px 17px 59px 11px rgb(63, 0,199,0.62); ;
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.cabeza .titulo{
+   
+}
+nav{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.cabeza ul{
+    position: relative;
+    height: 70px;
+    left: 1300px;
+    margin: 0;
+    float: left;
+}
+
+ul li{
+    display: inline block;
+    margin-left: 5px;
+    width: 90px;
+    height: 40px;
+    padding-top: 25px;
+    font-weight: bold;
+    list-style:none;
+    text-align: center;
+    text-transform: uppercases;
+    float: left;
+}
+ul li a{
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: 0.5s;   
+}
+
+a:hover{
+    background-color: #a581ff5b;
+    box-shadow: 0px 0px 400px 86px #a481ff ;
+    -webkit-box-shadow: 0px 0px 400px 86px #a481ff;
+    -moz-box-shadow:0px 0px 400px 86px #a481ff;
+    text-decoration: underline white;
+}
+    */

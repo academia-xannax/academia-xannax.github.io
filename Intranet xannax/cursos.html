@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACADEMIA XANNAX</title>
+    <link rel="stylesheet" href="intranet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="intranet.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="img/logox.png" alt="Logo ACADEMIA XANNAX" class="logo">
+        <h1>XANNAX INTRANET</h1>
+    </header>
+    <nav class="navbar">
+        <a href="cursos.html">Cursos</a>
+        <a href="mensajes.html">Mensajes</a>
+        <a href="archivos.html">Archivos</a>
+        <a href="perfil.html">Perfil</a>
+    </nav>
+    <div class="main-content">
+        <aside class="sidebar">
+            <h2>Panel de Navegación</h2>
+            <ul>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="archivos.html">Archivos</a></li>
+                <li><a href="videollamadas.html">Videollamadas</a></li>
+                <li><a href="tarea.html">Tareas</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="gestiongrupos.html">Grupos</a></li>
+            </ul>
+        </aside>
+        <section class="content" id="courses">
+            <h2>Mis Cursos</h2>
+            
+            <div class="course-container">
+                <!-- Curso 1 -->
+                <div class="course-item">
+                    <h3>Matemáticas Avanzadas</h3>
+                    <div class="course-content">
+                        <p><strong>Descripción:</strong> Este curso cubre álgebra avanzada, geometría y cálculo. Ideal para aquellos interesados en ciencias e ingeniería.</p>
+                        <p><strong>Objetivos:</strong></p>
+                        <ul>
+                            <li>Desarrollar habilidades en álgebra y geometría.</li>
+                            <li>Aplicar conceptos de cálculo en problemas reales.</li>
+                        </ul>
+                        <p><strong>Requisitos:</strong> Conocimientos básicos de matemáticas.</p>
+                        <p><strong>Duración:</strong> 3 meses.</p>
+                    </div>
+                    <button class="btn" onclick="toggleContent(this)">Ver Detalles</button>
+                </div>
+        
+                <!-- Curso 2 -->
+                <div class="course-item">
+                    <h3>Programación en Python</h3>
+                    <div class="course-content">
+                        <p><strong>Descripción:</strong> Aprende los fundamentos de la programación en Python, desde lo básico hasta conceptos avanzados como POO y manejo de bases de datos.</p>
+                        <p><strong>Objetivos:</strong></p>
+                        <ul>
+                            <li>Comprender la sintaxis de Python y sus estructuras de datos.</li>
+                            <li>Desarrollar aplicaciones utilizando Python.</li>
+                        </ul>
+                        <p><strong>Requisitos:</strong> No se requiere experiencia previa.</p>
+                        <p><strong>Duración:</strong> 2 meses.</p>
+                    </div>
+                    <button class="btn" onclick="toggleContent(this)">Ver Detalles</button>
+                </div>
+        
+                <!-- Curso 3 -->
+                <div class="course-item">
+                    <h3>Historia Universal</h3>
+                    <div class="course-content">
+                        <p><strong>Descripción:</strong> Un recorrido por los eventos más importantes de la historia, desde las civilizaciones antiguas hasta el mundo moderno.</p>
+                        <p><strong>Objetivos:</strong></p>
+                        <ul>
+                            <li>Comprender los eventos clave en la historia mundial.</li>
+                            <li>Analizar el impacto de estos eventos en la actualidad.</li>
+                        </ul>
+                        <p><strong>Requisitos:</strong> Interés en la historia y la cultura.</p>
+                        <p><strong>Duración:</strong> 4 meses.</p>
+                    </div>
+                    <button class="btn" onclick="toggleContent(this)">Ver Detalles</button>
+                </div>
+                
+                <!-- Curso 4 -->
+                <div class="course-item">
+                    <h3>Introducción a la Física</h3>
+                    <div class="course-content">
+                        <p><strong>Descripción:</strong> Explora los principios fundamentales de la física, incluyendo mecánica, termodinámica y electromagnetismo.</p>
+                        <p><strong>Objetivos:</strong></p>
+                        <ul>
+                            <li>Entender los conceptos básicos de la física.</li>
+                            <li>Aplicar principios físicos a problemas cotidianos.</li>
+                        </ul>
+                        <p><strong>Requisitos:</strong> Conocimientos básicos de matemáticas y ciencias.</p>
+                        <p><strong>Duración:</strong> 3 meses.</p>
+                    </div>
+                    <button class="btn" onclick="toggleContent(this)">Ver Detalles</button>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 ACADEMIA XANNAX</p>
+    </footer>
+</body>
+</html>
+
+
+
